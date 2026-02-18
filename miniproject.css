@@ -1,27 +1,149 @@
-h1{
-    color :red;
-    background-color:#ffebc4bd;
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: black;
-    font-weight: bolder;
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 35px;
-    line-height: 0px;
-    text-transform: uppercase;
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* ===== Scenic Background (Tourism Style) ===== */
+body {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+                url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80")
+                no-repeat center/cover;
+    padding: 40px 16px;
+    color: #ffffff;
+
+    /* Layout Fix */
+    display: flex;
+    flex-direction: column;      /* stack items vertically */
+    align-items: center;         /* center horizontally */
+    justify-content: flex-start; /* start from top */
 }
-#form{
-    text-align: start;
-    font-size: 50px;
-    text-decoration: dotted;
+
+/* ===== Main Heading ===== */
+h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
 }
- h4{
-        background-color: aquamarine;
-        text-align: start;
-        text-decoration: underline;
-        font-size:20px ;
-        text-transform:uppercase ;
-        padding:10px 10px 10px 10px ;
-        margin: 10px 550px 10px 550px;
+
+/* ===== Subtitle Divider ===== */
+.modern-line {
+    width: 90px;
+    height: 4px;
+    margin: 12px auto 28px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #22d3ee, #38bdf8);
+}
+
+/* ===== Glass Card Container ===== */
+#form {
+    width: 100%;
+    max-width: 650px;
+    backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 36px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.35);
+}
+
+/* ===== Section Title ===== */
+h4 {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 22px 0 10px;
+    color: #e0f2fe;
+}
+
+/* ===== Labels ===== */
+h3 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #f1f5f9;
+}
+
+/* ===== Inputs ===== */
+input {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 8px 0 16px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255,255,255,0.9);
+    color: #0f172a;
+    transition: all 0.25s ease;
+}
+
+input:focus {
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(56,189,248,0.4);
+}
+
+/* ===== Placeholder ===== */
+input::placeholder {
+    color: #64748b;
+}
+
+/* ===== Special Fields ===== */
+#tarik,
+#email,
+#contact,
+#vechil {
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: underline black;
+}
+
+/* ===== Button Style (Tourism CTA) ===== */
+button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(90deg, #22c55e, #4ade80);
+    color: white;
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(34,197,94,0.4);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    #form {
+        padding: 26px;
     }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+#name{
+    text-transform: uppercase;
+    width: 300px;
+    text-align: center;
+}
+.modern-line{
+    text-align: center;
+    margin: 10px 300px 10px 80px;
+}
