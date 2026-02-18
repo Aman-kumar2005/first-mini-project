@@ -1,11 +1,11 @@
-/* ===== Global Reset ===== */
+/*  Global Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===== Scenic Background (Tourism Style) ===== */
+/*  Scenic Background (Tourism Style) */
 body {
     font-family: "Segoe UI", system-ui, sans-serif;
     min-height: 100vh;
@@ -17,12 +17,11 @@ body {
 
     /* Layout Fix */
     display: flex;
-    flex-direction: column;      /* stack items vertically */
-    align-items: center;         /* center horizontally */
-    justify-content: flex-start; /* start from top */
-}
+    flex-direction: column;     
+        align-items: center;         
+    justify-content: flex-start; 
 
-/* ===== Main Heading ===== */
+/* Main Heading  */
 h1 {
     text-align: center;
     font-size: 2.4rem;
@@ -31,7 +30,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* ===== Subtitle Divider ===== */
+/*  Subtitle Divider  */
 .modern-line {
     width: 90px;
     height: 4px;
@@ -40,7 +39,7 @@ h1 {
     background: linear-gradient(90deg, #22d3ee, #38bdf8);
 }
 
-/* ===== Glass Card Container ===== */
+/*  Glass Card Container */
 #form {
     width: 100%;
     max-width: 650px;
@@ -58,7 +57,7 @@ h1 {
     box-shadow: 0 30px 60px rgba(0,0,0,0.35);
 }
 
-/* ===== Section Title ===== */
+/*  Section Title  */
 h4 {
     font-size: 0.95rem;
     text-transform: uppercase;
@@ -67,14 +66,14 @@ h4 {
     color: #e0f2fe;
 }
 
-/* ===== Labels ===== */
+/*  Labels */
 h3 {
     font-size: 0.95rem;
     font-weight: 500;
     color: #f1f5f9;
 }
 
-/* ===== Inputs ===== */
+/*  Inputs  */
 input {
     width: 100%;
     padding: 12px 14px;
@@ -93,12 +92,12 @@ input:focus {
     box-shadow: 0 0 0 3px rgba(56,189,248,0.4);
 }
 
-/* ===== Placeholder ===== */
+/*  Placeholder  */
 input::placeholder {
     color: #64748b;
 }
 
-/* ===== Special Fields ===== */
+/* Special Fields  */
 #tarik,
 #email,
 #contact,
@@ -109,7 +108,7 @@ input::placeholder {
     text-decoration: underline black;
 }
 
-/* ===== Button Style (Tourism CTA) ===== */
+/*  Button Style (Tourism CTA)  */
 button {
     width: 100%;
     padding: 14px;
@@ -128,7 +127,7 @@ button:hover {
     box-shadow: 0 10px 25px rgba(34,197,94,0.4);
 }
 
-/* ===== Responsive ===== */
+/*  Responsive  */
 @media (max-width: 600px) {
     #form {
         padding: 26px;
@@ -146,4 +145,5 @@ button:hover {
 .modern-line{
     text-align: center;
     margin: 10px 300px 10px 80px;
+}
 }
